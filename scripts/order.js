@@ -86,6 +86,7 @@ function displayFruitSummary(fruits){
     })
     const uniqueCal = [...new Set(calories)];
     const sumOfUniqueCalories = uniqueCal.reduce((total, carb) => total + carb, 0);
+    const roundedCal = sumOfUniqueCalories.toFixed(0)
     // console.log(`Sum of unique calories: ${sumOfUniqueCalories}`);
 
     const uniqueFat = [...new Set(fat)];
@@ -96,6 +97,7 @@ function displayFruitSummary(fruits){
 
     const uniqueCarbs = [...new Set(carbohydrates)];
     const sumOfUniqueCarbs = uniqueCarbs.reduce((total, carb) => total + carb, 0);
+    const roundedCarbs = sumOfUniqueCarbs.toFixed(2)
     // console.log(`Sum of unique carbs: ${sumOfUniqueCarbs}`);
 
     const uniqueProtein = [...new Set(protein)];
@@ -112,7 +114,7 @@ function displayFruitSummary(fruits){
     summaryTitle.innerHTML = 'Summary'
     document.getElementById('total').appendChild(summaryTitle)
     let summary = document.createElement('ul')
-    summary.innerHTML = `<li>Calories: ${sumOfUniqueCalories}</li><li>Fat: ${roundedFat} grams</li><li>Carbs: ${sumOfUniqueCarbs} grams</li><li>Protein: ${roundedProtein} grams</li><li>Sugar: ${roundedSugar} grams</li>`
+    summary.innerHTML = `<li>Calories: ${roundedCal}</li><li>Fat: ${roundedFat} grams</li><li>Carbs: ${roundedCarbs} grams</li><li>Protein: ${roundedProtein} grams</li><li>Sugar: ${roundedSugar} grams</li>`
     document.getElementById('total').appendChild(summary)
 
 
