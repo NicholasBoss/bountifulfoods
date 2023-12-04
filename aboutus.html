@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - About Beautiful Foods">
+    <meta name="author" content="Nicholas Boss">
+    <meta property="og:title" content="About Beautiful Foods">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development - About Beautiful Foods">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:image" content="https://imgs.search.brave.com/QwwP_ypP1NLeTiwmrZ0sXBzw7mlhbbG7PfTEufGse30/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2U5L01vcmdhblV0/YWguanBlZw"> -->
+    <meta property="og:url" content="https://nicholasboss.github.io/wdd230/beautifulfoods/aboutus.html">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <title>About Beautiful Foods</title>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img id="logo" src="./images/logo-color.png" alt="Bountiful Foods Logo">
+        </a>
+        <h1>Bountiful Foods</h1>
+        <button id="menu" aria-label="hamburger-menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="orderdrink.html">Order Drinks</a>
+                </li>
+                <li>
+                    <a id="active" href="aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="about-main">
+        <picture>
+            <source media="(max-width: 530px)" srcset="./images/bountifulfoodssmoothie-small.png">
+            <source media="(max-width: 700px)" srcset="./images/bountifulfoodssmoothie-medium.png">
+            <img src="./images/bountifulfoodssmoothie.png" loading="lazy" alt="Bountiful Foods Smoothie Combination">
+        </picture>
+        <section class="aboutus">
+            <h2>About Us</h2>
+            <p>Bountiful Foods is a small, family owned business that started in 2020. We are dedicated to providing the best quality fruit drinks to our customers. We are located in Carlsbad, California and are open from 8am to 8pm every day.</p>
+            <p>Our goal is to provide the best quality fruit drinks to our customers. We use only the freshest fruit and the best ingredients to make our drinks. We also strive to provide the best customer service possible. We want our customers to feel like they are part of our family.</p>
+            <p>We are always looking for ways to improve our business. If you have any suggestions or comments, please feel free to contact us at BountifulFoods@gmail.com
+        </section>
+        <picture>
+            <source media="(max-width: 530px)" srcset="./images/bountifulfoodssmoothie2-small.png">
+            <source media="(max-width: 700px)" srcset="./images/bountifulfoodssmoothie2-medium.png">
+            <img src="./images/bountifulfoodssmoothie2.png" loading="lazy" alt="Bountiful Foods Smoothie Combination 2">
+        </picture>
+        <div class="maps">
+            <section class="city">
+                <h2>Our City</h2>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53464.39076770121!2d-117.32900151508618!3d33.12158465696592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1701622215096!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="location">
+                <h2>Our Location</h2>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.622626821031!2d-117.3137966848418!3d33.15886898088786!2m3!1f0!2f39.99999863066117!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc6e0d0c4b5a5d%3A0x1b0b9b0b0b0b0b0b!2s6005%20Hidden%20Valley%20Rd%2C%20Carlsbad%2C%20CA%2092011!5e0!3m2!1sen!2sus!4v1598456900329!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0" title="Map of Bountiful Foods Location"></iframe>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <p>Bountiful Foods - &copy; <span id="currentyear"></span></p>
+            <div class="attribution">
+                <h3>Attribution:</h3>
+                <p>https://fruityvice.com</p>
+                <p>https://openweathermap.org</p>
+                <p>https://maps.google.com</p>
+                <p>Hero photo by <a href="https://unsplash.com/@jkakaroto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jonas Kakaroto</a> on <a href="https://unsplash.com/photos/red-apple-fruit-beside-green-apple-and-yellow-fruit-on-brown-woven-basket-5JQH9Iqnm9o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+                <p>Pier Photo by <a href="https://unsplash.com/@april_vasquez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">April Vasquez</a> on <a href="https://unsplash.com/photos/a-large-bridge-with-a-sunset-1cFrirrlTEg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+                <p>B.F. Photo by <a href="https://hotpot.ai">Hotpot AI Image Generator</a></p>
+
+            </div>
+        </div>
+        <div class="modified">
+            <p>Nicholas Boss - WDD 230</p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+        </div>
+        <div class="contact">
+            <p class="social">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook Icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter Icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="Instagram Icon">
+                </a>
+            </p>
+            <p>6005 Hidden Valley Rd, Carlsbad, CA 92011</p>
+            <p>BountifulFoods@gmail.com</p>
+            <p>886-859-8456</p>
+        </div>
+    </footer>
+</body>
+</html>

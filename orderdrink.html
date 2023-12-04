@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Beautiful Foods Order Drink">
+    <meta name="author" content="Nicholas Boss">
+    <meta property="og:title" content="Beautiful Foods Order Drink">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development - Beautiful Foods Order Drink">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:image" content="https://imgs.search.brave.com/QwwP_ypP1NLeTiwmrZ0sXBzw7mlhbbG7PfTEufGse30/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2U5L01vcmdhblV0/YWguanBlZw"> -->
+    <meta property="og:url" content="https://nicholasboss.github.io/wdd230/beautifulfoods/orderdrink.html">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Beautiful Foods Order Drink</title>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/getfruit.js" defer></script>
+    <script src="scripts/setorderamt.js" defer></script>
+    <script src="scripts/orderdate.js" defer></script>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img id="logo" src="./images/logo-color.png" alt="Bountiful Foods Logo">
+        </a>
+        <h1>Bountiful Foods</h1>
+        <button id="menu" aria-label="hamburger-menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a  href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id="active" href="orderdrink.html">Order Drinks</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="drink-main">
+        <h2>Order a Drink</h2>
+        <p>Payment will be received when your order is picked up.</p>
+        <form id="order-form" action="orderconf.html" method="get">
+            <fieldset>
+                <label>First Name*: <input id="fname" name="fname" type="text" required></label>
+                <label>Last Name*: <input id="lname" name="lname" type="text" required></label>
+                <label>Email*: <input id="email" name="email" type="email" required></label>
+                <label>Phone*: <input id="tel" name="tel" type="tel" required></label>
+                <!-- Provide a list of options provided by the fruit json file -->
+                <label>First Fruit Choice*: <select id="fruitlist" name="fruit1" required><option value="">Choose</option></select></label>
+                <label>Second Fruit Choice*: <select id="fruitlist2" name="fruit2" required><option value="">Choose</option></select></label>
+                <label>Third Fruit Choice*: <select id="fruitlist3" name="fruit3" required><option value="">Choose</option></select></label>
+                
+                <label>Special Instructions: <textarea id="spec_instr" name="spec_instr" rows="5" cols="30"></textarea></label>
+                <label><input id="timestamp" name="timestamp" type="hidden" value=""></label>
+                <button type="submit">Make that smoothie!</button>
+            </fieldset>
+        </form>
+        <div class="popular-combinations">
+            <h3>Popular Combinations</h3>
+            <div class="combo">
+                <img src="./images/bountifulfoodssmoothie.png" alt="Bountiful Foods Smoothie Combination">
+                <p>Strawberry, Banana, and Mango</p>
+            </div>
+            <div class="combo">
+                <img src="./images/bountifulfoodssmoothie2.png" alt="Bountiful Foods Smoothie Combination 2">
+                <p>Strawberry, Banana, and Pineapple</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <p>Bountiful Foods - &copy; <span id="currentyear"></span></p>
+            <div class="attribution">
+                <p>Attribution:</p>
+                <p>https://fruityvice.com</p>
+                <p>https://openweathermap.org</p>
+                <p>https://maps.google.com</p>
+                <p>Hero photo by <a href="https://unsplash.com/@jkakaroto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jonas Kakaroto</a> on <a href="https://unsplash.com/photos/red-apple-fruit-beside-green-apple-and-yellow-fruit-on-brown-woven-basket-5JQH9Iqnm9o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+                <p>Pier Photo by <a href="https://unsplash.com/@april_vasquez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">April Vasquez</a> on <a href="https://unsplash.com/photos/a-large-bridge-with-a-sunset-1cFrirrlTEg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+                <p>B.F. Photo by <a href="https://hotpot.ai">Hotpot AI Image Generator</a></p>
+            </div>
+        </div>
+        <div class="modified">
+            <p>Nicholas Boss - WDD 230</p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+        </div>
+        <div class="contact">
+            <p class="social">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook Icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter Icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="Instagram Icon">
+                </a>
+            </p>
+            <p>6005 Hidden Valley Rd, Carlsbad, CA 92011</p>
+            <p>BountifulFoods@gmail.com</p>
+            <p>886-859-8456</p>
+        </div>
+    </footer>
+</body>
+</html>
