@@ -38,6 +38,7 @@ header {
 }
 
 header h1 {
+	color: var(--headline-color-on-color);
 	text-align: center;
 	grid-row: 2;
 	grid-column: 1;
@@ -311,6 +312,10 @@ ul {
 .nutrition {
     padding: 2%;
     border: 2px solid black;
+}
+
+.nutrition h2 {
+	text-align: center;
 }
 
 /* About Us */
