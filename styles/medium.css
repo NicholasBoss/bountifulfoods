@@ -45,8 +45,9 @@
     }
 
     #hero {
-        max-width: 80%;
+        
         margin: 0 auto;
+        text-align: center;
     }
 
     footer {
@@ -138,7 +139,7 @@
         padding: 10%;
     }
 
-    picture {
+    .about-pic {
         padding: 5%;
         max-width: 700px;
     }
