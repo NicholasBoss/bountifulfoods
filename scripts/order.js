@@ -111,7 +111,7 @@ function displayFruitSummary(fruits){
     // console.log(`Sum of unique sugar: ${sumOfUniqueSugar}`);
 
     let summaryTitle = document.createElement('h3')
-    summaryTitle.innerHTML = 'Summary'
+    summaryTitle.innerHTML = 'Total Nutritional Info'
     document.getElementById('total').appendChild(summaryTitle)
     let summary = document.createElement('ul')
     summary.innerHTML = `<li>Calories: ${roundedCal}</li><li>Fat: ${roundedFat} grams</li><li>Carbs: ${roundedCarbs} grams</li><li>Protein: ${roundedProtein} grams</li><li>Sugar: ${roundedSugar} grams</li>`
